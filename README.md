@@ -10,7 +10,8 @@ Tema Project = Penyewaan Properti
 
 # Flowchart
 
-![FC_MINPRO2_FIX drawio](https://github.com/user-attachments/assets/252263a5-5631-471b-bcd9-a21a1c25fed8)
+![FC_MINPRO2_FIX(BENERAN) drawio](https://github.com/user-attachments/assets/8439d25d-b3b0-4c13-9820-65bc153e68c0)
+
 
 # Penjelasan Proses
 
