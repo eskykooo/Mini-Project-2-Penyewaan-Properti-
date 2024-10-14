@@ -46,6 +46,7 @@ properti = {
 
 # fungsi buat admin biar bisa nambahin properti
 def admin_tambah():
+    admin_penyewa_liat()
     while True:
         nomor_properti = input("Masukkan Nomor Properti : ") # nasukin nomor properti
         jenis = input("Masukkan Jenis Properti (Kendaraan/Bangunan) : ") # masukin jenis properti
@@ -69,12 +70,13 @@ def admin_tambah():
             
 # fungsi buat admin mau hapus properti apa ndak
 def admin_hapus():
+    admin_penyewa_liat()
     nomor_properti = input("Masukkan Nomor Properti Yang Ingin Dihapus : ") 
     if nomor_properti in properti:
         del properti[nomor_properti]
         print("Properti Berhasil Dihapus!") # otomatis properti tehapus
     else:
-        print("Nomor Properti Tidak Ditemukan.") 
+        print("Properti Gak Ada") 
 
 # fungsi buat admin sama penyewa biar sama" bisa liat propertinya
 def admin_penyewa_liat():
@@ -87,10 +89,11 @@ def admin_penyewa_liat():
         
         print(table) # buat munculin tabelnya
     else:
-        print("Belum ada data properti.")
+        print("Belum Ada Data Properti")
 
 # fungsi buat ngedit/memperbarui propertinya
 def admin_perbarui():
+    admin_penyewa_liat()
     nomor_properti = input("Masukkan Nomor Properti yang ingin diperbarui: ")
     if nomor_properti in properti:
         jenis = input("Masukkan Jenis Properti (Kendaraan/Bangunan) : ")
@@ -104,9 +107,9 @@ def admin_perbarui():
             "Harga Sewa per Hari": harga,
             "Status": status
         }
-        print("Properti berhasil diperbarui!")
+        print("Properti Berhasil Diperbarui")
     else:
-        print("Nomor properti tidak ditemukan.") 
+        print("Properti Gak Ada") 
 
 # menu sewa buat si penyewa 
 def menu_sewa():
@@ -127,11 +130,11 @@ def menu_sewa():
                 print(f"Properti {properti[nomor_properti]['Nama']} Berhasil Disewa Selama {hari} Hari.")
             # proses yang terjadi kalau tidak jadi bayar
             else:
-                print("Proses Penyewaan Gagal") #
+                print("Proses Penyewaan Dibatalin") 
         else:
-            print("Properti Tidak Tersedia Untuk Disewa.") # proses yang terjadi kalau properti dah disewa duluan
+            print("Properti Dah Disewa") # proses yang terjadi kalau properti dah disewa duluan
     else:
-        print("Nomor Properti Tidak Ditemukan.") # properti gak ada di dictionary
+        print("Properti Gak Ada") # properti gak ada di dictionary
 
 # menu penyewa setelah login
 def menu_penyewa():
@@ -139,9 +142,9 @@ def menu_penyewa():
         print("=" * 10 + "PILIH MENU YANG INGIN DIGUNAKAN" + "=" * 10)
         print("[1]. Liat Properti") # pilihan buat liat properti
         print("[2]. Sewa Properti") # pilihan buat sewa properti
-        print("[3]. Kembali Ke Menu Login") # balik menu login
+        print("[3]. Balik Menu Login") # balik menu login
         
-        pilihan_user = (input("Pilih Menu Yang Ingin Digunakan : ")) # disuruh milih menu apa
+        pilihan_user = (input("Pilih Menu Yang Pengen Digunakan : ")) # disuruh milih menu apa
         
         if pilihan_user == '1':
             admin_penyewa_liat()
@@ -150,7 +153,7 @@ def menu_penyewa():
         elif pilihan_user == '3':
             login()
         else:
-            print("Masukkan Angka Yang Valid")
+            print("Masukkan Angka Yang Bener")
 
 # menu buat admin setelah login
 def menu_admin():
@@ -160,7 +163,7 @@ def menu_admin():
         print("[2]. Hapus Properti") # pilihan buat ngapus properti
         print("[3]. Liat Properti") # pilihan buat liat properti
         print("[4]. Perbarui Properti") # pilihan buat perbarui properti
-        print("[5]. Kembali Ke Menu Login") # pilihan balik menu login
+        print("[5]. Balik Menu Login") # pilihan balik menu login
 
         pilihan_menu = input("Pilih Menu Yang Ingin Digunakan : ")
         
@@ -173,20 +176,19 @@ def menu_admin():
         elif pilihan_menu == '4':
             admin_perbarui()
         elif pilihan_menu == '5':
-            print("Kembali Ke Menu Login")
             return login()
         else:
-            print("Pilihan Tidak Valid, Silahkan Coba Lagi")
+            print("Pilihan Gak Bener, Coba Lagi")
 
 # fungsi buat login, ngebedain kriteria/menu buat admin dengan si penyewa
 def login():
     # pemilihan role admin atau penyewa
     while True:
         print("=" * 10 + "SELAMAT DATANG DI PENYEWAAN PROPERTI PAK AMBA" + "=" * 10)
-        print("Silahkan Pilih Menu Dibawah")
+        print("Pilih Menu Dibawah")
         print("[1]. Admin")
         print("[2]. Penyewa")
-        print("[3]. Keluar")
+        print("[3]. Keluar Program")
         pilihan = input("Masukkan Pilihan Anda : ")
         # role buat admin
         if pilihan == "1":
@@ -196,7 +198,7 @@ def login():
                 print("SELAMAT DATANG ADMIN")
                 menu_admin()
             else:
-                print("Username atau password admin salah. Silakan coba lagi.")
+                print("Nama atau Password Salah")
         # role buat penyewa
         elif pilihan == "2":
             nama_user = input("Masukkan Nama : ")
@@ -205,7 +207,11 @@ def login():
             menu_penyewa()
             
         elif pilihan == "3":
-            print("Terima Kasih Sudah Menyewa")
+            print("Makasih Dah Make")
+            exit()
+        
+        else:
+            print("Pilihan Salah. Coba Lagi")
 
 # untuk memulai segalanya
 login()
