@@ -59,9 +59,68 @@ Tema Project = Penyewaan Properti
 
     ![image](https://github.com/user-attachments/assets/a2a0303b-ec54-4bb3-a3a7-3dffb13e2c9e)
 
-11. Jika penyewa memilih nomor 2 (sewa properti), maka akann ditampilkan tabel properti
+11. Jika penyewa memilih nomor 2 (sewa properti), maka akann ditampilkan tabel properti, mengisi nomor properti yang ingin disewa dan mengisi jumlah hari yang ingin disewa, lalu akan muncul total harga keseluruhan, dan akan diberi pilihan apakah ingin lanjut bayar atau tidak, jika tidak maka akan kembali ke menu penyewa
 
-    ![image](https://github.com/user-attachments/assets/325a737b-7111-419d-bc28-2164529da82e)
+    ![image](https://github.com/user-attachments/assets/3d12559a-8b28-4278-8e80-bce7ec8cd0cb)
+
+    ![image](https://github.com/user-attachments/assets/a3d5419f-9bfa-44b0-a0c7-9e5b85b915ef)
+
+12. Jika penyewa memilih nomor 3 (balik ke login), maka akan kembali ke menu awal
+
+    ![image](https://github.com/user-attachments/assets/89dbbf01-e41c-40c6-b64b-67b9de74a441)
+
+13. Jika pengguna memilih nomor 3 (keluar), maka program akan keluar
+
+    ![image](https://github.com/user-attachments/assets/7df8cfaa-b307-4f40-938d-e490eb6359cf)
+
+# Screenshoot program untuk role admin
+
+![image](https://github.com/user-attachments/assets/7be2283e-2927-4a6d-be25-3a9d542f3f39)
+
+![image](https://github.com/user-attachments/assets/5b305559-3d7b-4681-9add-252c27f572ee)
+
+![image](https://github.com/user-attachments/assets/99a9bbe7-9f56-4caa-80de-81318b3b4a0e)
+
+![image](https://github.com/user-attachments/assets/219e7e98-274b-429c-ad6c-5204d1edf39e)
+
+![image](https://github.com/user-attachments/assets/9f2fcdf7-6f5b-4f43-bb9b-3e41e54e368e)
+
+![image](https://github.com/user-attachments/assets/c8fcf6cc-84e9-4ae5-8e8e-dfdf33cd6395)
+
+![image](https://github.com/user-attachments/assets/41808d02-d363-4974-8efd-5f89e0a53d5d)
+
+# Screenshoot untuk role penyewa
+
+![image](https://github.com/user-attachments/assets/83d65bce-27ba-4535-815f-7d374d161e1b)
+
+![image](https://github.com/user-attachments/assets/9141f609-6bb1-42ab-90ea-613c81a6f553)
+
+![image](https://github.com/user-attachments/assets/dd34d349-6e32-40f0-9f29-c42484661fe1)
+
+![image](https://github.com/user-attachments/assets/f3073703-9fe8-47d4-92b7-1fb60cf4e7cb)
+
+![image](https://github.com/user-attachments/assets/345ce8bd-6948-4457-b25a-4642e2eb904b)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
